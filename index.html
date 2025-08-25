@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TatuMzuka - 3 Lucky Number Game</title>
+    <meta name="description" content="Play our lucky number game and win big with BIF currency">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <i data-lucide="crown"></i>
+                    </div>
+                    <span class="logo-text">TatuMzuka</span>
+                    <div class="timer-section">
+                        <i data-lucide="clock"></i>
+                        <span>DRAW IN <span id="countdown">28:15</span></span>
+                    </div>
+                </div>
+
+                <nav class="desktop-nav">
+                    <a href="index.html" class="nav-link active">HOME</a>
+                    <a href="how-to-play.html" class="nav-link">HOW TO PLAY</a>
+                    <a href="contact.html" class="nav-link">CONTACT</a>
+                    <a href="winners.html" class="nav-link">WINNERS</a>
+                    <a href="results.html" class="nav-link">RESULTS</a>
+                    <a href="terms.html" class="nav-link">TERMS</a>
+                </nav>
+
+                <div class="auth-buttons">
+                    <button id="loginBtn" class="btn btn-outline">LOGIN</button>
+                    <button id="signupBtn" class="btn btn-secondary">SIGN UP</button>
+                    <button id="profileBtn" class="btn btn-secondary" style="display: none;">PROFILE</button>
+                </div>
+
+                <button id="mobileMenuBtn" class="mobile-menu-btn">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon" style="display: none;"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="mobile-menu">
+                <nav class="mobile-nav">
+                    <a href="index.html" class="nav-link">HOME</a>
+                    <a href="how-to-play" class="nav-link">HOW TO PLAY</a>
+                    <a href="contact.html" class="nav-link">CONTACT</a>
+                    <a href="winners.html" class="nav-link">WINNERS</a>
+                    <a href="results.html" class="nav-link">RESULTS</a>
+                    <a href="terms.html" class="nav-link">TERMS</a>
+                    <div class="mobile-auth">
+                        <button id="mobileLoginBtn" class="btn btn-outline">LOGIN</button>
+                        <button id="mobileSignupBtn" class="btn btn-secondary">SIGN UP</button>
+                        <button id="mobileProfileBtn" class="btn btn-secondary" style="display: none;">PROFILE</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Game Interface -->
+        <section id="gameSection" class="game-section">
+            <div class="winner-banner">
+                <div class="banner-content">
+                    <i data-lucide="trophy"></i>
+                    <span>235 Winners in Last 24 Hours!</span>
+                </div>
+            </div>
+
+            <div class="game-container">
+                <div class="hero-content">
+                    <div class="game-info">
+                        <div class="game-badge">
+                            <div class="badge-number">3</div>
+                            <div class="badge-text">
+                                <span class="game-title">LUCKY NUMBER GAME</span>
+                                <span class="game-subtitle">Win Big Every 30 Minutes</span>
+                            </div>
+                        </div>
+
+                        <h1 class="hero-title">
+                            Turn <span class="highlight">2,309.91 BIF</span> into 
+                            <span class="highlight">692,162.30 BIF</span>
+                        </h1>
+
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-number">1-2-3!</div>
+                                <div class="stat-label">Easy Steps</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">8.8B+</div>
+                                <div class="stat-label">BIF Won</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">30min</div>
+                                <div class="stat-label">Draws</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HOW TO PLAY -->
+                    <section id="howToPlaySection" class="how-to-play-section">
+                        <h2 class="how-to-play-title">How to Play</h2>
+                        <p class="how-to-play-description">
+                            Tatua 3 is a simple game where you can win up to <span class="highlight-red">68,874 BIF!</span><br>
+                            Simply pick three single-digit numbers from 0-9 in any order you'd like and place your minimum 220 BIF bet now.<br>
+                            Tatua 3 makes every day exciting with draws every 30 minutes, 24 hours a day, seven days a week. <br>
+                            You can win <span class="highlight-red">300x your bet</span> with Tatua 3!
+                        </p>
+                        <ol class="how-to-play-steps">
+                            <li class="step-item">Go to M-PESA → Lipa na M-PESA → Paybill 150150</li>
+                            <li class="step-item">Enter your 3 lucky numbers + WEB in account</li>
+                            <li class="step-item">Enter your bet amount (Min 220 BIF, Max 22,990 BIF)</li>
+                        </ol>
+                        <p class="how-to-play-payout">
+                            Match 2 or 3 numbers to win between <span class="highlight-red">2,299 BIF</span> and <span class="highlight-red">6,925,950 BIF</span>.
+                        </p>
+                        <p class="how-to-play-ticket">That's it! You'll receive your ticket by SMS.</p>
+                        <p class="how-to-play-join"><span class="highlight-brown"><b>Join the people who have already WON!!</b></span></p>
+                        <img src="2025-08-23 (1).png" alt="Winners" class="how-to-play-image" style="width:100%; height:auto;">
+                    </section>
+
+                    <div class="game-interface">
+                        <div class="game-card">
+                            <div class="draw-info">
+                                <h3>DRAW EVERY 30 MINUTES</h3>
+                                <div class="next-draw">
+                                    <i data-lucide="clock"></i>
+                                    <span>Next Draw: <span id="nextDraw">28:15</span></span>
+                                </div>
+                            </div>
+                            
+                            <div class="phone-section">
+                                <label>MOBILE PHONE NUMBER</label>
+                                <div class="phone-input">
+                                    <select id="countryCode" class="country-select">
+                                        <option value="+257">🇧🇮 +257</option>
+                                        <option value="+254">🇰🇪 +254</option>
+                                        <option value="+256">🇺🇬 +256</option>
+                                        <option value="+255">🇹🇿 +255</option>
+                                    </select>
+                                    <input type="tel" id="phoneNumber" placeholder="79921341" class="phone-field">
+                                </div>
+                            </div>
+
+                            <div class="numbers-section">
+                                <div class="section-header">
+                                    <h4>WHAT ARE YOUR 3 LUCKY NUMBERS?</h4>
+                                    <button id="randomBtn" class="btn btn-small">
+                                        <i data-lucide="shuffle"></i>
+                                        RANDOM PICKS
+                                    </button>
+                                </div>
+
+                                <div class="selected-numbers">
+                                    <div class="number-slot" id="slot1">?</div>
+                                    <div class="number-slot" id="slot2">?</div>
+                                    <div class="number-slot" id="slot3">?</div>
+                                </div>
+
+                                <div class="number-grid">
+                                    <button class="number-btn" data-number="0">0</button>
+                                    <button class="number-btn" data-number="1">1</button>
+                                    <button class="number-btn" data-number="2">2</button>
+                                    <button class="number-btn" data-number="3">3</button>
+                                    <button class="number-btn" data-number="4">4</button>
+                                    <button class="number-btn" data-number="5">5</button>
+                                    <button class="number-btn" data-number="6">6</button>
+                                    <button class="number-btn" data-number="7">7</button>
+                                    <button class="number-btn" data-number="8">8</button>
+                                    <button class="number-btn" data-number="9">9</button>
+                                </div>
+
+                                <button id="clearBtn" class="btn btn-ghost">Clear Selection</button>
+                            </div>
+
+                            <div class="stake-section">
+                                <label>YOUR STAKE</label>
+                                <div class="stake-input">
+                                    <span class="currency">BIF</span>
+                                    <button id="decreaseStake" class="stake-btn">
+                                        <i data-lucide="minus"></i>
+                                    </button>
+                                    <input type="number" id="stakeAmount" value="246" min="230" class="stake-field">
+                                    <button id="increaseStake" class="stake-btn">
+                                        <i data-lucide="plus"></i>
+                                    </button>
+                                    <span class="min-label">Min</span>
+                                </div>
+                                <div id="potentialWin" class="potential-win">Potential Win: BIF 0</div>
+                            </div>
+
+                            <button id="playBtn" class="btn btn-play">
+                                <i data-lucide="play"></i>
+                                PLAY NOW
+                            </button>
+
+                            <p class="disclaimer">Must be 18+ to play. Terms and conditions apply.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Profile Tab -->
+        <section class="tab-content" id="tab-profile" style="display: none;">
+            <!-- Profile Header Section -->
+            <div class="profile-header">
+                <div class="user-meta">
+                    <div class="avatar-tier">
+                        <div class="avatar">JM</div>
+                        <div class="vip-status">
+                            <i data-lucide="diamond"></i>
+                            Platinum Tier
+                        </div>
+                    </div>
+                    <div class="user-info">
+                        <h2>John M.</h2>
+                        <div class="account-details">
+                            <span>ID: 2389012</span>
+                            <span>Joined: Aug 2024</span>
+                            <span class="verification-badge">
+                                <i data-lucide="check-circle"></i> Verified
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Financial Quick Actions -->
+                <div class="finance-overview">
+                    <div class="balance-card">
+                        <div class="balance-header">
+                            <i data-lucide="wallet"></i>
+                            <div>
+                                <h3>Total Balance</h3>
+                                <div class="balance-amount">1,234,567.89 BIF</div>
+                            </div>
+                        </div>
+                        <div class="balance-breakdown">
+                            <div class="balance-item">
+                                <span>Available</span>
+                                <span>892,345.67 BIF</span>
+                            </div>
+                            <div class="balance-item">
+                                <span>In Play</span>
+                                <span>342,222.22 BIF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Method Carousel -->
+                    <div class="payment-methods">
+                        <div class="method-card active">
+                            <i data-lucide="smartphone"></i>
+                            <div>
+                                <h4>Lumicash</h4>
+                                <span>**** 6789</span>
+                            </div>
+                            <div class="method-limit">
+                                <small>Daily Limit: 5,000,000 BIF</small>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <i data-lucide="credit-card"></i>
+                            <div>
+                                <h4>VISA</h4>
+                                <span>**** 4321</span>
+                            </div>
+                            <div class="method-limit">
+                                <small>Daily Limit: 10,000,000 BIF</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Profile Navigation -->
+            <nav class="profile-nav-advanced">
+                <button class="nav-item active" data-section="activity">
+                    <i data-lucide="activity"></i> Activity
+                </button>
+                <button class="nav-item" data-section="financials">
+                    <i data-lucide="banknote"></i> Financials
+                </button>
+                <button class="nav-item" data-section="security">
+                    <i data-lucide="shield"></i> Security
+                </button>
+                <button class="nav-item" data-section="preferences">
+                    <i data-lucide="settings"></i> Preferences
+                </button>
+            </nav>
+
+            <!-- Detailed Profile Sections -->
+            <div class="profile-content-advanced">
+                <!-- Activity Dashboard -->
+                <div class="content-section active" id="activity">
+                    <div class="stats-grid-profile">
+                        <div class="stat-card-profile">
+                            <div class="stat-header">
+                                <i data-lucide="trophy"></i>
+                                <h4>Performance</h4>
+                            </div>
+                            <div class="stat-body">
+                                <div class="stat-item">
+                                    <span>Total Bets</span>
+                                    <span>1,234</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span>Win Rate</span>
+                                    <span>47.8%</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span>Profit/Loss</span>
+                                    <span class="positive">+892,345 BIF</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card-profile">
+                            <div class="stat-header">
+                                <i data-lucide="zap"></i>
+                                <h4>Streaks</h4>
+                            </div>
+                            <div class="stat-body">
+                                <div class="streak-item">
+                                    <span>Current Win Streak</span>
+                                    <div class="streak-bar">
+                                        <div class="streak-progress" style="width: 70%">5</div>
+                                    </div>
+                                </div>
+                                <div class="streak-item">
+                                    <span>Best Win Streak</span>
+                                    <div class="streak-bar">
+                                        <div class="streak-progress" style="width: 100%">12</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bet History -->
+                    <div class="bet-history">
+                        <div class="section-header">
+                            <h4>Recent Activity</h4>
+                            <div class="history-filters">
+                                <select>
+                                    <option>Last 7 Days</option>
+                                    <option>This Month</option>
+                                    <option>Custom Range</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="history-list">
+                            <div class="history-item win">
+                                <i data-lucide="check-circle"></i>
+                                <div class="item-details">
+                                    <div class="item-main">
+                                        <span>#230812-45</span>
+                                        <span>3-7-9</span>
+                                        <span class="amount positive">+234,567 BIF</span>
+                                    </div>
+                                    <div class="item-meta">
+                                        <span>24 Aug 2025 15:30</span>
+                                        <span>Odds: 2.75x</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Financial Management -->
+                <div class="content-section" id="financials">
+                    <div class="finance-tools">
+                        <!-- Deposit Flow -->
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <i data-lucide="plus-circle"></i>
+                                <h4>Deposit Funds</h4>
+                            </div>
+                            <div class="tool-body">
+                                <div class="deposit-steps">
+                                    <div class="step active">
+                                        <span>1. Amount</span>
+                                    </div>
+                                    <div class="step">
+                                        <span>2. Method</span>
+                                    </div>
+                                    <div class="step">
+                                        <span>3. Confirm</span>
+                                    </div>
+                                </div>
+                                <div class="amount-selector">
+                                    <div class="quick-amount">50,000 BIF</div>
+                                    <div class="quick-amount">100,000 BIF</div>
+                                    <div class="quick-amount">500,000 BIF</div>
+                                    <input type="number" placeholder="Custom Amount">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Withdrawal Flow -->
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <i data-lucide="minus-circle"></i>
+                                <h4>Withdraw Funds</h4>
+                            </div>
+                            <div class="tool-body">
+                                <div class="withdrawal-info">
+                                    <div class="info-item">
+                                        <span>Available Balance</span>
+                                        <span>892,345 BIF</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span>Minimum Withdrawal</span>
+                                        <span>50,000 BIF</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span>Processing Time</span>
+                                        <span>1-3 Business Days</span>
+                                    </div>
+                                </div>
+                                <div class="withdrawal-form">
+                                    <input type="number" placeholder="Enter Amount">
+                                    <button class="request-btn">Submit Request</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Center -->
+                <div class="content-section" id="security">
+                    <div class="security-dashboard">
+                        <div class="security-card critical">
+                            <i data-lucide="shield-alert"></i>
+                            <div class="security-info">
+                                <h4>Account Protection</h4>
+                                <div class="security-status">
+                                    <span class="status-indicator medium"></span>
+                                    Medium Security
+                                </div>
+                            </div>
+                            <button class="security-action">
+                                <i data-lucide="lock"></i> Enhance Security
+                            </button>
+                        </div>
+
+                        <div class="security-checklist">
+                            <div class="check-item completed">
+                                <i data-lucide="check-circle"></i>
+                                Email Verification
+                            </div>
+                            <div class="check-item">
+                                <i data-lucide="alert-circle"></i>
+                                Two-Factor Authentication
+                            </div>
+                            <div class="check-item completed">
+                                <i data-lucide="check-circle"></i>
+                                Transaction PIN
+                            </div>
+                        </div>
+
+                        <!-- Session Management -->
+                        <div class="session-list">
+                            <div class="session-item current">
+                                <i data-lucide="monitor"></i>
+                                <div class="session-info">
+                                    <div class="session-meta">
+                                        <strong>Current Session</strong>
+                                        <span>Nairobi, Kenya</span>
+                                    </div>
+                                    <div class="session-details">
+                                        <span>Chrome on Windows</span>
+                                        <span>24 Aug 2025 21:15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Preferences -->
+                <div class="content-section" id="preferences">
+                    <div class="preference-settings">
+                        <div class="setting-card">
+                            <div class="setting-header">
+                                <i data-lucide="bell"></i>
+                                <h4>Notification Preferences</h4>
+                            </div>
+                            <div class="setting-options">
+                                <div class="option-item">
+                                    <span>Result Notifications</span>
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <span>Promotional Offers</span>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="setting-card">
+                            <div class="setting-header">
+                                <i data-lucide="palette"></i>
+                                <h4>Appearance Settings</h4>
+                            </div>
+                            <div class="theme-selector">
+                                <div class="theme-option light active">
+                                    <div class="theme-preview"></div>
+                                    Light Mode
+                                </div>
+                                <div class="theme-option dark">
+                                    <div class="theme-preview"></div>
+                                    Dark Mode
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Document Verification Modal -->
+            <div class="modal" id="verification-modal">
+                <div class="modal-content">
+                    <h3><i data-lucide="file-text"></i> Account Verification</h3>
+                    <div class="verification-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>ID Verification</h4>
+                                <p>Upload government-issued ID</p>
+                                <button class="upload-btn">
+                                    <i data-lucide="upload"></i> Upload Document
+                                </button>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Address Proof</h4>
+                                <p>Recent utility bill or bank statement</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <i data-lucide="log-in"></i>
+                    <h2>Login to TatuMzuka</h2>
+                </div>
+                <button class="close-btn" data-modal="loginModal">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <form id="loginForm" class="modal-form">
+                <div class="form-group">
+                    <label>Mobile Number</label>
+                    <div class="phone-input">
+                        <select class="country-select">
+                            <option value="+257">🇧🇮 +257</option>
+                            <option value="+254">🇰🇪 +254</option>
+                            <option value="+256">🇺🇬 +256</option>
+                            <option value="+255">🇹🇿 +255</option>
+                        </select>
+                        <input type="tel" id="loginPhone" placeholder="79921341" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>PIN</label>
+                    <div class="pin-input">
+                        <input type="password" id="loginPin" placeholder="Enter 4-digit PIN" maxlength="4" required>
+                        <button type="button" class="toggle-pin">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i data-lucide="log-in"></i>
+                    LOGIN
+                </button>
+                <div class="form-footer">
+                    <p>Don't have an account? <button type="button" id="switchToSignup">Sign up here</button></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header signup-header">
+                <div class="modal-title">
+                    <i data-lucide="user-plus"></i>
+                    <h2>Create Account</h2>
+                </div>
+                <button class="close-btn" data-modal="signupModal">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <form id="signupForm" class="modal-form">
+                <div class="form-group">
+                    <label>Mobile Number</label>
+                    <div class="phone-input">
+                        <select class="country-select">
+                            <option value="+257">🇧🇮 +257</option>
+                            <option value="+254">🇰🇪 +254</option>
+                            <option value="+256">🇺🇬 +256</option>
+                            <option value="+255">🇹🇿 +255</option>
+                        </select>
+                        <input type="tel" id="signupPhone" placeholder="79921341" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Create PIN</label>
+                    <div class="pin-input">
+                        <input type="password" id="signupPin" placeholder="Create 4-digit PIN" maxlength="4" required>
+                        <button type="button" class="toggle-pin">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Confirm PIN</label>
+                    <div class="pin-input">
+                        <input type="password" id="confirmPin" placeholder="Confirm 4-digit PIN" maxlength="4" required>
+                        <button type="button" class="toggle-pin">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-secondary">
+                    <i data-lucide="user-plus"></i>
+                    CREATE ACCOUNT
+                </button>
+                <div class="form-footer">
+                    <p>Already have an account? <button type="button" id="switchToLogin">Login here</button></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- PIN Confirmation Modal -->
+    <div id="pinModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Enter Your PIN</h3>
+            </div>
+            <div class="pin-confirmation">
+                <input type="password" id="confirmBetPin" placeholder="Enter 4-digit PIN" maxlength="4" class="pin-field">
+                <div class="pin-actions">
+                    <button id="cancelPin" class="btn btn-outline">Cancel</button>
+                    <button id="confirmBet" class="btn btn-success">Confirm Bet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>TatuMzuka</h4>
+                <p>Your trusted partner in gaming excellence.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">How to Play</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <p>24/7 Customer Support</p>
+                <p>Email: support@tatumzuka.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TatuMzuka. All rights reserved. Play responsibly.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
