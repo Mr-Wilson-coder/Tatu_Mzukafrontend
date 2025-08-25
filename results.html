@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery Results - TatuMzuka</title>
+    <meta name="description" content="Check the latest TatuMzuka lottery results. See winning numbers, prizes, and draw history.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <h2>TatuMzuka</h2>
+                </div>
+                <div class="nav-links desktop-nav">
+                    <a href="index.html" class="nav-link">HOME</a>
+                    <a href="results.html" class="nav-link active">RESULTS</a>
+                    <a href="winners.html" class="nav-link">WINNERS</a>
+                    <a href="how-to-play.html" class="nav-link">HOW TO PLAY</a>
+                    <a href="terms.html" class="nav-link">TERMS</a>
+                    <a href="contact.html" class="nav-link">CONTACT</a>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="results.html" class="mobile-nav-link active">Results</a>
+        <a href="winners.html" class="mobile-nav-link">Winners</a>
+        <a href="how-to-play.html" class="mobile-nav-link">How to Play</a>
+        <a href="terms.html" class="mobile-nav-link">Terms</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="header-container">
+            <h1>Latest Results</h1>
+            <p>Check the latest winning numbers and see if you're a winner!</p>
+        </div>
+    </header>
+
+    <!-- Latest Result -->
+    <section class="latest-results">
+        <div class="container">
+            <div class="results-card">
+                <div class="results-header">
+                    <h2>Latest Draw Results</h2>
+                    <div class="latest-draw">
+                        <p class="draw-info">Draw #2025001 - Today 14:30</p>
+                        <div class="winning-numbers">
+                            <div class="number-ball">7</div>
+                            <div class="number-ball">2</div>
+                            <div class="number-ball">9</div>
+                        </div>
+                        <p class="prize-pool">Total Prize Pool: <span>BIF 2,450,000</span></p>
+                    </div>
+                </div>
+                
+                <div class="prize-breakdown">
+                    <div class="prize-card green">
+                        <i class="fas fa-trophy"></i>
+                        <h3>3 Numbers Match</h3>
+                        <p class="prize-amount">BIF 692,162</p>
+                        <p class="winner-count">12 Winners</p>
+                    </div>
+                    <div class="prize-card blue">
+                        <i class="fas fa-medal"></i>
+                        <h3>2 Numbers Match</h3>
+                        <p class="prize-amount">BIF 2,309</p>
+                        <p class="winner-count">234 Winners</p>
+                    </div>
+                    <div class="prize-card pink">
+                        <i class="fas fa-star"></i>
+                        <h3>Next Draw</h3>
+                        <p class="prize-amount" id="nextDraw">15:00</p>
+                        <p class="winner-count">In 20 minutes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results History -->
+    <section class="results-history">
+        <div class="container">
+            <div class="history-card">
+                <h2>Recent Draw History</h2>
+                
+                <div class="history-list">
+                    <div class="history-item">
+                        <div class="draw-info-left">
+                            <div class="draw-details">
+                                <p class="draw-number">Draw #2025000</p>
+                                <p class="draw-time">Today 14:00</p>
+                            </div>
+                            <div class="draw-numbers">
+                                <div class="small-number-ball">3</div>
+                                <div class="small-number-ball">8</div>
+                                <div class="small-number-ball">1</div>
+                            </div>
+                        </div>
+                        <div class="draw-results">
+                            <p class="winners">8 Winners</p>
+                            <p class="total-prize">BIF 1,850,000 Total</p>
+                        </div>
+                    </div>
+
+                    <div class="history-item">
+                        <div class="draw-info-left">
+                            <div class="draw-details">
+                                <p class="draw-number">Draw #2024999</p>
+                                <p class="draw-time">Today 13:30</p>
+                            </div>
+                            <div class="draw-numbers">
+                                <div class="small-number-ball">5</div>
+                                <div class="small-number-ball">0</div>
+                                <div class="small-number-ball">7</div>
+                            </div>
+                        </div>
+                        <div class="draw-results">
+                            <p class="winners">15 Winners</p>
+                            <p class="total-prize">BIF 2,100,000 Total</p>
+                        </div>
+                    </div>
+
+                    <div class="history-item">
+                        <div class="draw-info-left">
+                            <div class="draw-details">
+                                <p class="draw-number">Draw #2024998</p>
+                                <p class="draw-time">Today 13:00</p>
+                            </div>
+                            <div class="draw-numbers">
+                                <div class="small-number-ball">2</div>
+                                <div class="small-number-ball">6</div>
+                                <div class="small-number-ball">4</div>
+                            </div>
+                        </div>
+                        <div class="draw-results">
+                            <p class="winners">22 Winners</p>
+                            <p class="total-prize">BIF 3,200,000 Total</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="view-more">
+                    <button class="btn-primary">
+                        <i class="fas fa-history"></i>
+                        View More Results
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Play Now Section -->
+    <section class="play-now-section">
+        <div class="container">
+            <div class="play-now-card">
+                <h2>Ready to Play?</h2>
+                <p>Join thousands of players and try your luck in the next draw!</p>
+                
+                <div class="play-now-button">
+                    <a href="/" class="btn-play-now">
+                        <i class="fas fa-play"></i>
+                        Play Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TatuMzuka</h3>
+                    <p>Burundia's premier lottery platform. Play responsibly and win big!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Results</a></li>
+                        <li><a href="#">Winners</a></li>
+                        <li><a href="#">How to Play</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TatuMzuka. All rights reserved. Play responsibly.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - TatuMzuka</title>
+  <meta name="description" content="Get in touch with TatuMzuka support team. Available 24/7 via phone, WhatsApp, email, or Facebook.">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-content">
+        <div class="nav-logo">
+          <h2 class="logo-text">TatuMzuka</h2>
+        </div>
+        <div class="nav-links-desktop">
+          <div class="nav-links">
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="results.html" class="nav-link">RESULTS</a>
+            <a href="winners.html" class="nav-link">WINNERS</a>
+            <a href="how-to-play.html" class="nav-link">HOW TO PLAY</a>
+            <a href="terms.html" class="nav-link">TERMS</a>
+            <a href="contact.html" class="nav-link active">CONTACT</a>
+          </div>
+        </div>
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <i class="fas fa-bars" id="menu-icon"></i>
+          <i class="fas fa-times hidden" id="close-icon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav hidden" id="mobile-nav">
+      <a href="index.html" class="mobile-nav-link">HOME</a>
+      <a href="results.html" class="mobile-nav-link">RESULTS</a>
+      <a href="winners.html" class="mobile-nav-link">WINNERS</a>
+      <a href="how-to-play.html" class="mobile-nav-link">HOW TO PLAY</a>
+      <a href="terms.html" class="mobile-nav-link">TERMS</a>
+      <a href="contact.html" class="mobile-nav-link">CONTACT</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <h1 class="header-title">Contact Us</h1>
+      <p class="header-subtitle">We're here to help! Get in touch with our support team.</p>
+    </div>
+  </header>
+
+  <!-- Main container -->
+  <div class="main-container">
+    <div class="content-grid">
+      <!-- Left column (Support Info) -->
+      <aside class="support-info">
+        <div class="support-card">
+          <h3 class="support-title">Customer Support 24/7</h3>
+          <div class="support-sections">
+            <section class="support-section phone-support">
+              <h4 class="support-section-title">
+                <i class="fas fa-phone support-icon"></i>
+                Phone Support
+              </h4>
+              <p class="support-contact">+257 79 123 4567</p>
+              <p class="support-desc">Available 24 hours, 7 days a week</p>
+            </section>
+            <section class="support-section whatsapp-support">
+              <h4 class="support-section-title">
+                <i class="fab fa-whatsapp support-icon"></i>
+                WhatsApp
+              </h4>
+              <p class="support-contact">+257 79 987 6543</p>
+              <p class="support-desc">Quick support via WhatsApp</p>
+            </section>
+            <section class="support-section email-support">
+              <h4 class="support-section-title">
+                <i class="fas fa-envelope support-icon"></i>
+                Email
+              </h4>
+              <p class="support-contact">support@tatumzuka.com</p>
+              <p class="support-desc">Quick responses via email</p>
+            </section>
+            <section class="support-section facebook-support">
+              <h4 class="support-section-title">
+                <i class="fab fa-facebook support-icon"></i>
+                Facebook
+              </h4>
+              <p class="support-contact">@TatuMzuka</p>
+              <p class="support-desc">You can also message us on Facebook at @TatuMzuka</p>
+            </section>
+          </div>
+          
+          <!-- Working Hours -->
+          <div class="working-hours">
+            <h4 class="working-hours-title">
+              <i class="fas fa-clock support-icon"></i>
+              Working Hours
+            </h4>
+            <p class="working-hours-text">
+              Support available Monday - Friday, 9:00 AM - 5:00 PM (GMT+2)<br>
+              Emergency support available 24/7 for critical issues
+            </p>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="social-media">
+            <h4 class="social-title">Follow Us</h4>
+            <div class="social-links">
+              <a href="https://facebook.com/tatumzuka" class="social-link facebook" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/tatumzuka" class="social-link twitter" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://instagram.com/tatumzuka" class="social-link instagram" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://t.me/tatumzuka" class="social-link telegram" target="_blank">
+                <i class="fab fa-telegram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="address-card">
+          <h3 class="address-title">Office Address</h3>
+          <div class="address-content">
+            <p class="address-text">
+              TatuMzuka Gaming Ltd.<br>
+              123 Arcade Plaza, Floor 5<br>
+              Boulevard de l'Uprona<br>
+              Bujumbura, Burundi
+            </p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right column (Contact Form) -->
+      <main class="contact-form-container">
+        <div class="form-card">
+          <h3 class="form-title">Send us a Message</h3>
+          
+          <!-- Success/Error Messages -->
+          <div id="successMessage" class="message success-message hidden">
+            <i class="fas fa-check-circle"></i>
+            <span>Your message has been sent successfully! We'll get back to you within 24 hours.</span>
+          </div>
+          
+          <div id="errorMessage" class="message error-message hidden">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span id="errorText">There was a problem submitting the form. Please try again.</span>
+          </div>
+          
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required class="form-input">
+              <div class="field-error" id="nameError"></div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required class="form-input">
+              <div class="field-error" id="emailError"></div>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <div class="phone-input-container">
+                <select id="countryCode" class="country-select">
+                  <option value="+93" data-country="AF">🇦🇫 Afghanistan (+93)</option>
+                  <option value="+355" data-country="AL">🇦🇱 Albania (+355)</option>
+                  <option value="+213" data-country="DZ">🇩🇿 Algeria (+213)</option>
+                  <option value="+1684" data-country="AS">🇦🇸 American Samoa (+1684)</option>
+                  <option value="+376" data-country="AD">🇦🇩 Andorra (+376)</option>
+                  <option value="+244" data-country="AO">🇦🇴 Angola (+244)</option>
+                  <option value="+1264" data-country="AI">🇦🇮 Anguilla (+1264)</option>
+                  <option value="+672" data-country="AQ">🇦🇶 Antarctica (+672)</option>
+                  <option value="+1268" data-country="AG">🇦🇬 Antigua and Barbuda (+1268)</option>
+                  <option value="+54" data-country="AR">🇦🇷 Argentina (+54)</option>
+                  <option value="+374" data-country="AM">🇦🇲 Armenia (+374)</option>
+                  <option value="+297" data-country="AW">🇦🇼 Aruba (+297)</option>
+                  <option value="+61" data-country="AU">🇦🇺 Australia (+61)</option>
+                  <option value="+43" data-country="AT">🇦🇹 Austria (+43)</option>
+                  <option value="+994" data-country="AZ">🇦🇿 Azerbaijan (+994)</option>
+                  <option value="+1242" data-country="BS">🇧🇸 Bahamas (+1242)</option>
+                  <option value="+973" data-country="BH">🇧🇭 Bahrain (+973)</option>
+                  <option value="+880" data-country="BD">🇧🇩 Bangladesh (+880)</option>
+                  <option value="+1246" data-country="BB">🇧🇧 Barbados (+1246)</option>
+                  <option value="+375" data-country="BY">🇧🇾 Belarus (+375)</option>
+                  <option value="+32" data-country="BE">🇧🇪 Belgium (+32)</option>
+                  <option value="+501" data-country="BZ">🇧🇿 Belize (+501)</option>
+                  <option value="+229" data-country="BJ">🇧🇯 Benin (+229)</option>
+                  <option value="+1441" data-country="BM">🇧🇲 Bermuda (+1441)</option>
+                  <option value="+975" data-country="BT">🇧🇹 Bhutan (+975)</option>
+                  <option value="+591" data-country="BO">🇧🇴 Bolivia (+591)</option>
+                  <option value="+387" data-country="BA">🇧🇦 Bosnia and Herzegovina (+387)</option>
+                  <option value="+267" data-country="BW">🇧🇼 Botswana (+267)</option>
+                  <option value="+55" data-country="BR">🇧🇷 Brazil (+55)</option>
+                  <option value="+246" data-country="IO">🇮🇴 British Indian Ocean Territory (+246)</option>
+                  <option value="+673" data-country="BN">🇧🇳 Brunei Darussalam (+673)</option>
+                  <option value="+359" data-country="BG">🇧🇬 Bulgaria (+359)</option>
+                  <option value="+226" data-country="BF">🇧🇫 Burkina Faso (+226)</option>
+                  <option value="+257" data-country="BI" selected>🇧🇮 Burundi (+257)</option>
+                  <option value="+855" data-country="KH">🇰🇭 Cambodia (+855)</option>
+                  <option value="+237" data-country="CM">🇨🇲 Cameroon (+237)</option>
+                  <option value="+1" data-country="CA">🇨🇦 Canada (+1)</option>
+                  <option value="+238" data-country="CV">🇨🇻 Cape Verde (+238)</option>
+                  <option value="+1345" data-country="KY">🇰🇾 Cayman Islands (+1345)</option>
+                  <option value="+236" data-country="CF">🇨🇫 Central African Republic (+236)</option>
+                  <option value="+235" data-country="TD">🇹🇩 Chad (+235)</option>
+                  <option value="+56" data-country="CL">🇨🇱 Chile (+56)</option>
+                  <option value="+86" data-country="CN">🇨🇳 China (+86)</option>
+                  <option value="+61" data-country="CX">🇨🇽 Christmas Island (+61)</option>
+                  <option value="+61" data-country="CC">🇨🇨 Cocos (Keeling) Islands (+61)</option>
+                  <option value="+57" data-country="CO">🇨🇴 Colombia (+57)</option>
+                  <option value="+269" data-country="KM">🇰🇲 Comoros (+269)</option>
+                  <option value="+242" data-country="CG">🇨🇬 Congo (+242)</option>
+                  <option value="+243" data-country="CD">🇨🇩 Congo, Democratic Republic (+243)</option>
+                  <option value="+682" data-country="CK">🇨🇰 Cook Islands (+682)</option>
+                  <option value="+506" data-country="CR">🇨🇷 Costa Rica (+506)</option>
+                  <option value="+225" data-country="CI">🇨🇮 Cote D'Ivoire (+225)</option>
+                  <option value="+385" data-country="HR">🇭🇷 Croatia (+385)</option>
+                  <option value="+53" data-country="CU">🇨🇺 Cuba (+53)</option>
+                  <option value="+357" data-country="CY">🇨🇾 Cyprus (+357)</option>
+                  <option value="+420" data-country="CZ">🇨🇿 Czech Republic (+420)</option>
+                  <option value="+45" data-country="DK">🇩🇰 Denmark (+45)</option>
+                  <option value="+253" data-country="DJ">🇩🇯 Djibouti (+253)</option>
+                  <option value="+1767" data-country="DM">🇩🇲 Dominica (+1767)</option>
+                  <option value="+1809" data-country="DO">🇩🇴 Dominican Republic (+1809)</option>
+                  <option value="+593" data-country="EC">🇪🇨 Ecuador (+593)</option>
+                  <option value="+20" data-country="EG">🇪🇬 Egypt (+20)</option>
+                  <option value="+503" data-country="SV">🇸🇻 El Salvador (+503)</option>
+                  <option value="+240" data-country="GQ">🇬🇶 Equatorial Guinea (+240)</option>
+                  <option value="+291" data-country="ER">🇪🇷 Eritrea (+291)</option>
+                  <option value="+372" data-country="EE">🇪🇪 Estonia (+372)</option>
+                  <option value="+251" data-country="ET">🇪🇹 Ethiopia (+251)</option>
+                  <option value="+500" data-country="FK">🇫🇰 Falkland Islands (+500)</option>
+                  <option value="+298" data-country="FO">🇫🇴 Faroe Islands (+298)</option>
+                  <option value="+679" data-country="FJ">🇫🇯 Fiji (+679)</option>
+                  <option value="+358" data-country="FI">🇫🇮 Finland (+358)</option>
+                  <option value="+33" data-country="FR">🇫🇷 France (+33)</option>
+                  <option value="+594" data-country="GF">🇬🇫 French Guiana (+594)</option>
+                  <option value="+689" data-country="PF">🇵🇫 French Polynesia (+689)</option>
+                  <option value="+241" data-country="GA">🇬🇦 Gabon (+241)</option>
+                  <option value="+220" data-country="GM">🇬🇲 Gambia (+220)</option>
+                  <option value="+995" data-country="GE">🇬🇪 Georgia (+995)</option>
+                  <option value="+49" data-country="DE">🇩🇪 Germany (+49)</option>
+                  <option value="+233" data-country="GH">🇬🇭 Ghana (+233)</option>
+                  <option value="+350" data-country="GI">🇬🇮 Gibraltar (+350)</option>
+                  <option value="+30" data-country="GR">🇬🇷 Greece (+30)</option>
+                  <option value="+299" data-country="GL">🇬🇱 Greenland (+299)</option>
+                  <option value="+1473" data-country="GD">🇬🇩 Grenada (+1473)</option>
+                  <option value="+590" data-country="GP">🇬🇵 Guadeloupe (+590)</option>
+                  <option value="+1671" data-country="GU">🇬🇺 Guam (+1671)</option>
+                  <option value="+502" data-country="GT">🇬🇹 Guatemala (+502)</option>
+                  <option value="+224" data-country="GN">🇬🇳 Guinea (+224)</option>
+                  <option value="+245" data-country="GW">🇬🇼 Guinea-Bissau (+245)</option>
+                  <option value="+592" data-country="GY">🇬🇾 Guyana (+592)</option>
+                  <option value="+509" data-country="HT">🇭🇹 Haiti (+509)</option>
+                  <option value="+504" data-country="HN">🇭🇳 Honduras (+504)</option>
+                  <option value="+852" data-country="HK">🇭🇰 Hong Kong (+852)</option>
+                  <option value="+36" data-country="HU">🇭🇺 Hungary (+36)</option>
+                  <option value="+354" data-country="IS">🇮🇸 Iceland (+354)</option>
+                  <option value="+91" data-country="IN">🇮🇳 India (+91)</option>
+                  <option value="+62" data-country="ID">🇮🇩 Indonesia (+62)</option>
+                  <option value="+98" data-country="IR">🇮🇷 Iran (+98)</option>
+                  <option value="+964" data-country="IQ">🇮🇶 Iraq (+964)</option>
+                  <option value="+353" data-country="IE">🇮🇪 Ireland (+353)</option>
+                  <option value="+972" data-country="IL">🇮🇱 Israel (+972)</option>
+                  <option value="+39" data-country="IT">🇮🇹 Italy (+39)</option>
+                  <option value="+1876" data-country="JM">🇯🇲 Jamaica (+1876)</option>
+                  <option value="+81" data-country="JP">🇯🇵 Japan (+81)</option>
+                  <option value="+962" data-country="JO">🇯🇴 Jordan (+962)</option>
+                  <option value="+7" data-country="KZ">🇰🇿 Kazakhstan (+7)</option>
+                  <option value="+254" data-country="KE">🇰🇪 Kenya (+254)</option>
+                  <option value="+686" data-country="KI">🇰🇮 Kiribati (+686)</option>
+                  <option value="+850" data-country="KP">🇰🇵 Korea, North (+850)</option>
+                  <option value="+82" data-country="KR">🇰🇷 Korea, South (+82)</option>
+                  <option value="+965" data-country="KW">🇰🇼 Kuwait (+965)</option>
+                  <option value="+996" data-country="KG">🇰🇬 Kyrgyzstan (+996)</option>
+                  <option value="+856" data-country="LA">🇱🇦 Laos (+856)</option>
+                  <option value="+371" data-country="LV">🇱🇻 Latvia (+371)</option>
+                  <option value="+961" data-country="LB">🇱🇧 Lebanon (+961)</option>
+                  <option value="+266" data-country="LS">🇱🇸 Lesotho (+266)</option>
+                  <option value="+231" data-country="LR">🇱🇷 Liberia (+231)</option>
+                  <option value="+218" data-country="LY">🇱🇾 Libya (+218)</option>
+                  <option value="+423" data-country="LI">🇱🇮 Liechtenstein (+423)</option>
+                  <option value="+370" data-country="LT">🇱🇹 Lithuania (+370)</option>
+                  <option value="+352" data-country="LU">🇱🇺 Luxembourg (+352)</option>
+                  <option value="+853" data-country="MO">🇲🇴 Macao (+853)</option>
+                  <option value="+389" data-country="MK">🇲🇰 North Macedonia (+389)</option>
+                  <option value="+261" data-country="MG">🇲🇬 Madagascar (+261)</option>
+                  <option value="+265" data-country="MW">🇲🇼 Malawi (+265)</option>
+                  <option value="+60" data-country="MY">🇲🇾 Malaysia (+60)</option>
+                  <option value="+960" data-country="MV">🇲🇻 Maldives (+960)</option>
+                  <option value="+223" data-country="ML">🇲🇱 Mali (+223)</option>
+                  <option value="+356" data-country="MT">🇲🇹 Malta (+356)</option>
+                  <option value="+692" data-country="MH">🇲🇭 Marshall Islands (+692)</option>
+                  <option value="+596" data-country="MQ">🇲🇶 Martinique (+596)</option>
+                  <option value="+222" data-country="MR">🇲🇷 Mauritania (+222)</option>
+                  <option value="+230" data-country="MU">🇲🇺 Mauritius (+230)</option>
+                  <option value="+262" data-country="YT">🇾🇹 Mayotte (+262)</option>
+                  <option value="+52" data-country="MX">🇲🇽 Mexico (+52)</option>
+                  <option value="+691" data-country="FM">🇫🇲 Micronesia (+691)</option>
+                  <option value="+373" data-country="MD">🇲🇩 Moldova (+373)</option>
+                  <option value="+377" data-country="MC">🇲🇨 Monaco (+377)</option>
+                  <option value="+976" data-country="MN">🇲🇳 Mongolia (+976)</option>
+                  <option value="+382" data-country="ME">🇲🇪 Montenegro (+382)</option>
+                  <option value="+1664" data-country="MS">🇲🇸 Montserrat (+1664)</option>
+                  <option value="+212" data-country="MA">🇲🇦 Morocco (+212)</option>
+                  <option value="+258" data-country="MZ">🇲🇿 Mozambique (+258)</option>
+                  <option value="+95" data-country="MM">🇲🇲 Myanmar (+95)</option>
+                  <option value="+264" data-country="NA">🇳🇦 Namibia (+264)</option>
+                  <option value="+674" data-country="NR">🇳🇷 Nauru (+674)</option>
+                  <option value="+977" data-country="NP">🇳🇵 Nepal (+977)</option>
+                  <option value="+31" data-country="NL">🇳🇱 Netherlands (+31)</option>
+                  <option value="+599" data-country="AN">🇦🇳 Netherlands Antilles (+599)</option>
+                  <option value="+687" data-country="NC">🇳🇨 New Caledonia (+687)</option>
+                  <option value="+64" data-country="NZ">🇳🇿 New Zealand (+64)</option>
+                  <option value="+505" data-country="NI">🇳🇮 Nicaragua (+505)</option>
+                  <option value="+227" data-country="NE">🇳🇪 Niger (+227)</option>
+                  <option value="+234" data-country="NG">🇳🇬 Nigeria (+234)</option>
+                  <option value="+683" data-country="NU">🇳🇺 Niue (+683)</option>
+                  <option value="+672" data-country="NF">🇳🇫 Norfolk Island (+672)</option>
+                  <option value="+1670" data-country="MP">🇲🇵 Northern Mariana Islands (+1670)</option>
+                  <option value="+47" data-country="NO">🇳🇴 Norway (+47)</option>
+                  <option value="+968" data-country="OM">🇴🇲 Oman (+968)</option>
+                  <option value="+92" data-country="PK">🇵🇰 Pakistan (+92)</option>
+                  <option value="+680" data-country="PW">🇵🇼 Palau (+680)</option>
+                  <option value="+970" data-country="PS">🇵🇸 Palestine (+970)</option>
+                  <option value="+507" data-country="PA">🇵🇦 Panama (+507)</option>
+                  <option value="+675" data-country="PG">🇵🇬 Papua New Guinea (+675)</option>
+                  <option value="+595" data-country="PY">🇵🇾 Paraguay (+595)</option>
+                  <option value="+51" data-country="PE">🇵🇪 Peru (+51)</option>
+                  <option value="+63" data-country="PH">🇵🇭 Philippines (+63)</option>
+                  <option value="+48" data-country="PL">🇵🇱 Poland (+48)</option>
+                  <option value="+351" data-country="PT">🇵🇹 Portugal (+351)</option>
+                  <option value="+1787" data-country="PR">🇵🇷 Puerto Rico (+1787)</option>
+                  <option value="+974" data-country="QA">🇶🇦 Qatar (+974)</option>
+                  <option value="+262" data-country="RE">🇷🇪 Reunion (+262)</option>
+                  <option value="+40" data-country="RO">🇷🇴 Romania (+40)</option>
+                  <option value="+7" data-country="RU">🇷🇺 Russian Federation (+7)</option>
+                  <option value="+250" data-country="RW">🇷🇼 Rwanda (+250)</option>
+                  <option value="+290" data-country="SH">🇸🇭 Saint Helena (+290)</option>
+                  <option value="+1869" data-country="KN">🇰🇳 Saint Kitts and Nevis (+1869)</option>
+                  <option value="+1758" data-country="LC">🇱🇨 Saint Lucia (+1758)</option>
+                  <option value="+508" data-country="PM">🇵🇲 Saint Pierre and Miquelon (+508)</option>
+                  <option value="+1784" data-country="VC">🇻🇨 Saint Vincent and the Grenadines (+1784)</option>
+                  <option value="+685" data-country="WS">🇼🇸 Samoa (+685)</option>
+                  <option value="+378" data-country="SM">🇸🇲 San Marino (+378)</option>
+                  <option value="+239" data-country="ST">🇸🇹 Sao Tome and Principe (+239)</option>
+                  <option value="+966" data-country="SA">🇸🇦 Saudi Arabia (+966)</option>
+                  <option value="+221" data-country="SN">🇸🇳 Senegal (+221)</option>
+                  <option value="+381" data-country="RS">🇷🇸 Serbia (+381)</option>
+                  <option value="+248" data-country="SC">🇸🇨 Seychelles (+248)</option>
+                  <option value="+232" data-country="SL">🇸🇱 Sierra Leone (+232)</option>
+                  <option value="+65" data-country="SG">🇸🇬 Singapore (+65)</option>
+                  <option value="+421" data-country="SK">🇸🇰 Slovakia (+421)</option>
+                  <option value="+386" data-country="SI">🇸🇮 Slovenia (+386)</option>
+                  <option value="+677" data-country="SB">🇸🇧 Solomon Islands (+677)</option>
+                  <option value="+252" data-country="SO">🇸🇴 Somalia (+252)</option>
+                  <option value="+27" data-country="ZA">🇿🇦 South Africa (+27)</option>
+                  <option value="+34" data-country="ES">🇪🇸 Spain (+34)</option>
+                  <option value="+94" data-country="LK">🇱🇰 Sri Lanka (+94)</option>
+                  <option value="+249" data-country="SD">🇸🇩 Sudan (+249)</option>
+                  <option value="+597" data-country="SR">🇸🇷 Suriname (+597)</option>
+                  <option value="+268" data-country="SZ">🇸🇿 Swaziland (+268)</option>
+                  <option value="+46" data-country="SE">🇸🇪 Sweden (+46)</option>
+                  <option value="+41" data-country="CH">🇨🇭 Switzerland (+41)</option>
+                  <option value="+963" data-country="SY">🇸🇾 Syria (+963)</option>
+                  <option value="+886" data-country="TW">🇹🇼 Taiwan (+886)</option>
+                  <option value="+992" data-country="TJ">🇹🇯 Tajikistan (+992)</option>
+                  <option value="+255" data-country="TZ">🇹🇿 Tanzania (+255)</option>
+                  <option value="+66" data-country="TH">🇹🇭 Thailand (+66)</option>
+                  <option value="+670" data-country="TL">🇹🇱 Timor-Leste (+670)</option>
+                  <option value="+228" data-country="TG">🇹🇬 Togo (+228)</option>
+                  <option value="+690" data-country="TK">🇹🇰 Tokelau (+690)</option>
+                  <option value="+676" data-country="TO">🇹🇴 Tonga (+676)</option>
+                  <option value="+1868" data-country="TT">🇹🇹 Trinidad and Tobago (+1868)</option>
+                  <option value="+216" data-country="TN">🇹🇳 Tunisia (+216)</option>
+                  <option value="+90" data-country="TR">🇹🇷 Turkey (+90)</option>
+                  <option value="+993" data-country="TM">🇹🇲 Turkmenistan (+993)</option>
+                  <option value="+1649" data-country="TC">🇹🇨 Turks and Caicos Islands (+1649)</option>
+                  <option value="+688" data-country="TV">🇹🇻 Tuvalu (+688)</option>
+                  <option value="+256" data-country="UG">🇺🇬 Uganda (+256)</option>
+                  <option value="+380" data-country="UA">🇺🇦 Ukraine (+380)</option>
+                  <option value="+971" data-country="AE">🇦🇪 United Arab Emirates (+971)</option>
+                  <option value="+44" data-country="GB">🇬🇧 United Kingdom (+44)</option>
+                  <option value="+1" data-country="US">🇺🇸 United States (+1)</option>
+                  <option value="+598" data-country="UY">🇺🇾 Uruguay (+598)</option>
+                  <option value="+998" data-country="UZ">🇺🇿 Uzbekistan (+998)</option>
+                  <option value="+678" data-country="VU">🇻🇺 Vanuatu (+678)</option>
+                  <option value="+58" data-country="VE">🇻🇪 Venezuela (+58)</option>
+                  <option value="+84" data-country="VN">🇻🇳 Vietnam (+84)</option>
+                  <option value="+1284" data-country="VG">🇻🇬 Virgin Islands, British (+1284)</option>
+                  <option value="+1340" data-country="VI">🇻🇮 Virgin Islands, U.S. (+1340)</option>
+                  <option value="+681" data-country="WF">🇼🇫 Wallis and Futuna (+681)</option>
+                  <option value="+212" data-country="EH">🇪🇭 Western Sahara (+212)</option>
+                  <option value="+967" data-country="YE">🇾🇪 Yemen (+967)</option>
+                  <option value="+260" data-country="ZM">🇿🇲 Zambia (+260)</option>
+                  <option value="+263" data-country="ZW">🇿🇼 Zimbabwe (+263)</option>
+                </select>
+                <input type="tel" id="phone" name="phone" placeholder="7XXXXXXXX" class="phone-input">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject *</label>
+              <select id="subject" name="subject" required class="form-select">
+                <option value="">Select a subject</option>
+                <option value="technical">Technical Issue</option>
+                <option value="payment">Payment Issue</option>
+                <option value="feedback">Feedback</option>
+                <option value="legal">Legal</option>
+                <option value="other">Other</option>
+              </select>
+              <div class="field-error" id="subjectError"></div>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message *</label>
+              <textarea id="message" name="message" placeholder="Please describe your issue or question in detail..." required rows="5" class="form-textarea"></textarea>
+              <div class="field-error" id="messageError"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="attachment" class="form-label">Attach File (Optional)</label>
+              <div class="file-input-container">
+                <input type="file" id="attachment" name="attachment" accept="image/*,.pdf,.doc,.docx" class="file-input">
+                <label for="attachment" class="file-input-label">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <span class="file-input-text">Choose file or drag here</span>
+                </label>
+                <div class="file-input-info">Supported formats: Images, PDF, DOC (Max 10MB)</div>
+              </div>
+              <div class="field-error" id="attachmentError"></div>
+            </div>
+            <div class="support-tips">
+              <h4 class="tips-title">
+                <i class="fas fa-bolt tips-icon"></i>
+                For Faster Support, Please Include:
+              </h4>
+              <ul class="tips-list">
+                <li class="tips-item"><i class="fas fa-check tips-check"></i>Your phone number used for betting</li>
+                <li class="tips-item"><i class="fas fa-check tips-check"></i>BIF payment confirmation code (if payment related)</li>
+                <li class="tips-item"><i class="fas fa-check tips-check"></i>Specific date and time of the issue</li>
+                <li class="tips-item"><i class="fas fa-check tips-check"></i>Screenshots if applicable</li>
+              </ul>
+            </div>
+            <!-- reCAPTCHA -->
+            <div class="form-group">
+              <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+              <div class="field-error" id="recaptchaError"></div>
+            </div>
+            
+            <button type="submit" id="submitBtn" class="submit-btn">
+              <i class="fas fa-paper-plane submit-icon"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3 class="footer-brand">TatuMzuka</h3>
+          <p class="footer-desc">Burundia's premier lottery platform. Play responsibly and win big!</p>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="results.html" class="footer-link">Results</a></li>
+            <li><a href="winners.html" class="footer-link">Winners</a></li>
+            <li><a href="how-to-play.html" class="footer-link">How to Play</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2025 TatuMzuka. All rights reserved. Play responsibly.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

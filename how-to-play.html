@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Play - TatuMzuka Lottery</title>
+    <meta name="description" content="Learn how to play TatuMzuka lottery. Simple steps to pick numbers, place bets, and win big prizes.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <h2>TatuMzuka</h2>
+                </div>
+                <div class="nav-links desktop-nav">
+                    <a href="index.html">HOME</a>
+                    <a href="results.html">RESULTS</a>
+                    <a href="winners.html">WINNERS</a>
+                    <a href="how-to-play.html" class="active">HOW TO PLAY</a>
+                    <a href="terms.html">TERMS</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="index.html">HOME</a>
+            <a href="results.html">RESULTS</a>
+            <a href="winners.html">WINNERS</a>
+            <a href="how-to-play.html" class="active">HOW TO PLAY</a>
+            <a href="terms.html">TERMS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="header-container">
+            <h1 class="page-title">How to Play</h1>
+            <p class="page-subtitle">Learn how to play TatuMzuka and start winning today!</p>
+            <div class="header-animation">
+                <div class="floating-numbers">
+                    <span class="float-number">7</span>
+                    <span class="float-number">3</span>
+                    <span class="float-number">9</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Game Overview -->
+        <section class="overview-section animate-section" data-section="1">
+            <div class="section-container">
+                <div class="overview-card gradient-mint-bg">
+                    <div class="overview-header">
+                        <div class="game-icon">
+                            <span class="big-number">3</span>
+                        </div>
+                        <h2 class="section-title">TatuMzuka 3 Numbers Game</h2>
+                        <p class="section-subtitle">Pick 3 numbers from 0-9 and win up to 300x your bet!</p>
+                    </div>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Every 30 Minutes</h3>
+                            <p>Draws happen 24/7</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <h3>BIF 230 Minimum</h3>
+                            <p>Low entry cost</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>Up to 300x</h3>
+                            <p>Maximum multiplier</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Play Steps -->
+        <section class="steps-section">
+            <div class="section-container">
+                <h2 class="section-title centered">How to Play - It's Easy!</h2>
+                
+                <!-- Step 1: Open Lumicash -->
+                <div class="step-card animate-section gradient-blue-bg" data-section="2">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Open Lumicash App</h3>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-text">
+                            <p>Open the Lumicash app on your phone and select <strong>TatuMzuka</strong> from the merchant list.</p>
+                            <div class="tip-box">
+                                <i class="fas fa-lightbulb"></i>
+                                <p>Tip: You can find TatuMzuka under "Games & Entertainment" section</p>
+                            </div>
+                        </div>
+                        <div class="step-animation">
+                            <div class="phone-container" id="phone-step1">
+                                <div class="phone">
+                                    <div class="phone-screen">
+                                        <div class="app-icon lumicash-icon">
+                                            <i class="fas fa-mobile-alt"></i>
+                                        </div>
+                                        <div class="app-name">Lumicash</div>
+                                        <div class="tap-indicator" id="tap1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Enter Numbers -->
+                <div class="step-card animate-section gradient-rose-bg" data-section="3">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Enter Your Lucky Numbers</h3>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-text">
+                            <p>Enter your 3 lucky numbers from 0-9 followed by <strong>WEB</strong> in the account name section.</p>
+                            <div class="example-box">
+                                <i class="fas fa-edit"></i>
+                                <div>
+                                    <p><strong>Example: 637 WEB</strong></p>
+                                    <p class="small-text">This means your numbers are 6, 3, and 7</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-animation">
+                            <div class="phone-container" id="phone-step2">
+                                <div class="phone">
+                                    <div class="phone-screen">
+                                        <div class="number-input-demo">
+                                            <div class="input-label">Account Name:</div>
+                                            <div class="input-field" id="numberInput">
+                                                <span class="typing-cursor">|</span>
+                                            </div>
+                                            <div class="number-display">
+                                                <div class="number-box" id="num1">?</div>
+                                                <div class="number-box" id="num2">?</div>
+                                                <div class="number-box" id="num3">?</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Choose Bet Amount -->
+                <div class="step-card animate-section gradient-mint-bg" data-section="4">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Choose Your Bet Amount</h3>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-text">
+                            <p>Enter your bet amount. The minimum is <strong>BIF 230</strong> and maximum is <strong>BIF 23,083</strong>.</p>
+                            <div class="tip-box">
+                                <i class="fas fa-coins"></i>
+                                <p>Higher bets = Higher prizes! Win up to 300x your bet amount</p>
+                            </div>
+                        </div>
+                        <div class="step-animation">
+                            <div class="phone-container" id="phone-step3">
+                                <div class="phone">
+                                    <div class="phone-screen">
+                                        <div class="bet-amount-demo">
+                                            <div class="input-label">Amount:</div>
+                                            <div class="amount-slider">
+                                                <div class="slider-track">
+                                                    <div class="slider-fill" id="sliderFill"></div>
+                                                    <div class="slider-thumb" id="sliderThumb"></div>
+                                                </div>
+                                            </div>
+                                            <div class="amount-display" id="amountDisplay">BIF 1,000</div>
+                                            <div class="potential-win" id="potentialWin">Potential Win: BIF 300,000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Confirm and Win -->
+                <div class="step-card animate-section gradient-blue-bg" data-section="5">
+                    <div class="step-header">
+                        <div class="step-number">4</div>
+                        <h3 class="step-title">Confirm & Win!</h3>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-text">
+                            <p>Confirm your bet and wait for the draw results. Winners are notified instantly via SMS!</p>
+                            <div class="tip-box">
+                                <i class="fas fa-bell"></i>
+                                <p>You'll receive SMS notifications when you win, and payouts are automatic!</p>
+                            </div>
+                        </div>
+                        <div class="step-animation">
+                            <div class="phone-container" id="phone-step4">
+                                <div class="phone">
+                                    <div class="phone-screen">
+                                        <div class="confirmation-demo">
+                                            <div class="confirm-button" id="confirmBtn">
+                                                <i class="fas fa-check"></i>
+                                                Confirm Bet
+                                            </div>
+                                            <div class="loading-indicator" id="loadingIndicator">
+                                                <div class="spinner"></div>
+                                                <p>Processing...</p>
+                                            </div>
+                                            <div class="success-message" id="successMessage">
+                                                <i class="fas fa-check-circle"></i>
+                                                <p>Bet Placed Successfully!</p>
+                                                <div class="ticket-number">Ticket: #TM12345</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prize Structure -->
+        <section class="prizes-section animate-section" data-section="6">
+            <div class="section-container">
+                <h2 class="section-title centered">Prize Structure</h2>
+                
+                <div class="prizes-grid">
+                    <div class="prize-card gradient-mint-bg">
+                        <h3 class="prize-title">Winning Combinations</h3>
+                        
+                        <div class="winning-combo">
+                            <div class="combo-info">
+                                <h4>3 Numbers Match (Exact Order)</h4>
+                                <p>All 3 numbers in exact sequence</p>
+                            </div>
+                            <div class="combo-prize">
+                                <span class="multiplier">300x</span>
+                                <span class="bet-text">Your Bet</span>
+                            </div>
+                        </div>
+                        
+                        <div class="winning-combo">
+                            <div class="combo-info">
+                                <h4>2 Numbers Match (Exact Order)</h4>
+                                <p>First 2 or last 2 numbers match</p>
+                            </div>
+                            <div class="combo-prize">
+                                <span class="multiplier">10x</span>
+                                <span class="bet-text">Your Bet</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="prize-card gradient-blue-bg">
+                        <h3 class="prize-title">Example Winnings</h3>
+                        
+                        <div class="example-winnings">
+                            <h4>If you bet BIF 1,000:</h4>
+                            <div class="winning-example">
+                                <span>3 numbers match:</span>
+                                <strong>BIF 300,000</strong>
+                            </div>
+                            <div class="winning-example">
+                                <span>2 numbers match:</span>
+                                <strong>BIF 10,000</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="max-prize">
+                            <h4>Maximum Prize (BIF 23,083 bet):</h4>
+                            <div class="max-amount">BIF 6,925,184</div>
+                            <p class="life-changing">Life-changing money!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Information -->
+        <section class="info-section animate-section gradient-rose-bg" data-section="7">
+            <div class="section-container">
+                <h3 class="section-title centered">Important Information</h3>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>
+                            <i class="fas fa-clock"></i>
+                            Draw Schedule
+                        </h4>
+                        <ul>
+                            <li>Draws every 30 minutes</li>
+                            <li>24 hours a day, 7 days a week</li>
+                            <li>Results announced immediately</li>
+                            <li>Next draw countdown shown on website</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h4>
+                            <i class="fas fa-gift"></i>
+                            Winning & Payouts
+                        </h4>
+                        <ul>
+                            <li>SMS notification when you win</li>
+                            <li>Automatic payout to your account</li>
+                            <li>No waiting - instant payouts</li>
+                            <li>All winnings tax-free</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="warning-card">
+                    <h4>
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Responsible Gaming
+                    </h4>
+                    <p>Please play responsibly. Only bet what you can afford to lose. If you feel you have a gambling problem, please seek help.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section animate-section" data-section="8">
+            <div class="section-container">
+                <div class="cta-card">
+                    <h2>Ready to Play?</h2>
+                    <p>Now that you know how to play, pick your lucky numbers and start winning!</p>
+                    <a href="index.html" class="cta-button">
+                        <i class="fas fa-play"></i>
+                        Start Playing Now
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TatuMzuka</h3>
+                    <p>Burundia's premier lottery platform. Play responsibly and win big!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="winners.html">Winners</a></li>
+                        <li><a href="how-to-play.html">How to Play</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TatuMzuka. All rights reserved. Play responsibly.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
