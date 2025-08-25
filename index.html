@@ -18,41 +18,6 @@
     <script src="index.js" defer></script>
 </head>
 <body>
-    <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="nav-content">
-        <div class="nav-logo">
-          <h2 class="logo-text">TatuMzuka</h2>
-        </div>
-        <div class="nav-links-desktop">
-          <div class="nav-links">
-            <a href="index.html" class="nav-link">HOME</a>
-            <a href="results.html" class="nav-link">RESULTS</a>
-            <a href="winners.html" class="nav-link">WINNERS</a>
-            <a href="how-to-play.html" class="nav-link">HOW TO PLAY</a>
-            <a href="terms.html" class="nav-link">TERMS</a>
-            <a href="contact.html" class="nav-link active">CONTACT</a>
-          </div>
-        </div>
-        <!-- Mobile Menu Toggle -->
-        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-          <i class="fas fa-bars" id="menu-icon"></i>
-          <i class="fas fa-times hidden" id="close-icon"></i>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav hidden" id="mobile-nav">
-      <a href="index.html" class="mobile-nav-link">HOME</a>
-      <a href="results.html" class="mobile-nav-link">RESULTS</a>
-      <a href="winners.html" class="mobile-nav-link">WINNERS</a>
-      <a href="how-to-play.html" class="mobile-nav-link">HOW TO PLAY</a>
-      <a href="terms.html" class="mobile-nav-link">TERMS</a>
-      <a href="contact.html" class="mobile-nav-link">CONTACT</a>
-    </div>
-  </nav>
     <!-- Header -->
     <header id="header">
         <div class="header-container">
@@ -61,6 +26,20 @@
                     <div class="logo-icon">
                         <i data-lucide="target"></i>
                     </div>
+                    <div class="logo-text">TatuMzuka</div>
+                    <div class="timer-section">
+                        <i data-lucide="clock"></i>
+                        <span id="countdown">Next Draw: 12h 45m</span>
+                    </div>
+                </div>
+                
+                <nav class="desktop-nav">
+                    <a href="results.html" class="nav-link active">Results</a>
+                    <a href="winners.html" class="nav-link">Winners</a>
+                    <a href="how-to-play.html" class="nav-link">How to Play</a>
+                    <a href="terms.html" class="nav-link">Terms & Conditions</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </nav>
                 
                 <div class="auth-buttons">
                     <button id="loginBtn" class="btn btn-outline">
