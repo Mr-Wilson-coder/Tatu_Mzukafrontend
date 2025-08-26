@@ -393,6 +393,7 @@ body {
 /* ==================== HERO CONTENT: TWO-COLUMN LAYOUT ==================== */
 .hero-content {
     display: flex;
+    flex-direction: row;
     gap: 3rem;
     min-height: 700px;
     align-items: flex-start;
@@ -406,84 +407,93 @@ body {
     color: var(--white);
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    padding-right: 2rem;
+    gap: 2.5rem;
+    padding-right: 3rem;
 }
 
 .game-badge {
-    background-color: rgba(251, 191, 36, 0.2);
+    background-color:var(--primary-red);
+    color: var(--white);
     backdrop-filter: blur(8px);
-    border-radius: 0.75rem;
-    padding: 1rem;
+    border-radius: 1.75rem;
+    padding: 2rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+    box-shadow:var(--primary-red);
 }
 
 .badge-number {
-    background-color: var(--primary-yellow);
-    color: var(--black);
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.25rem;
-    font-weight: bold;
+  background: var(--primary-yellow);
+  color: var(--primary-red);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex-shrink: 0;
 }
 
 .game-title {
-    color: var(--primary-yellow);
-    font-size: 2.1rem;
-    font-weight: bold;
-    margin: 0;
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .game-subtitle {
-    color: var(--white);
-    font-size: 2.0rem;
-    margin: 0;
+  font-size: 1.25rem;
+  color: var(--primary-yellow);
+  margin-bottom: 0.75rem;
 }
 
 .hero-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--white);
-    line-height: 1.2;
-    margin-bottom: 1rem;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-elegant);
+  border: 2px solid var(--primary-red);
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-red);
+  margin-bottom: 2rem;
 }
 
 .highlight {
-    color: var(--primary-yellow);
+  color: var(--primary-yellow);
 }
 
 .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+  display: grid;
+  gap: 1.5rem;
 }
 
 .stat-card {
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--primary-red);
+  color: var(--white);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: var(--transition);
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--primary-red);
 }
 
 .stat-number {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: var(--primary-yellow);
-    margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-yellow);
+  margin-bottom: 0.5rem;
 }
 
 .stat-label {
-    color: var(--white);
-    font-size: 0.875rem;
+  font-size: 1.125rem;
 }
+
 
 /* Right Side: Game Interface */
 .game-interface {
