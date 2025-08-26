@@ -9,6 +9,7 @@ body {
     line-height: 1.6;
     background-color: white;
     color: #333;
+ 
 }
 
 /* Color Variables */
@@ -334,8 +335,10 @@ body {
 
 /* ==================== MAIN CONTENT ==================== */
 #main {
-    background-color: var(--white);
+    background-color: var(--primary-red);
     min-height: calc(100vh - 80px);
+    position: relative;
+    z-index: 1;
 }
 
 /* ==================== GAME SECTION ==================== */
@@ -344,7 +347,7 @@ body {
     min-height: 100vh;
     position: relative;
     overflow: hidden;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .game-section::before {
@@ -359,7 +362,7 @@ body {
 }
 
 .winner-banner {
-    background-color: rgba(16, 185, 129, 0.9);
+    background-color:var(--primary-red)
     backdrop-filter: blur(8px);
     padding: 1rem;
     margin-bottom: 2rem;
@@ -376,6 +379,7 @@ body {
     gap: 0.5rem;
     color: var(--white);
     font-weight: bold;
+    color:yellow;
 }
 
 .game-container {
@@ -431,7 +435,7 @@ body {
 
 .game-title {
     color: var(--primary-yellow);
-    font-size: 0.9rem;
+    font-size: 2.1rem;
     font-weight: bold;
     margin: 0;
 }

@@ -472,3 +472,51 @@ function updateCountdown() {
 // Update countdown every minute
 setInterval(updateCountdown, 60000);
 updateCountdown(); // Initial call
+
+
+
+// ========================= DRAW COUNTDOWN =========================
+function startDrawCountdown() {
+    const countdownEl = document.getElementById('countdown');
+    if (!countdownEl) return;
+
+    function getNextDrawTime() {
+        const now = new Date();
+        const next = new Date(now);
+
+        // Round to next 30-minute mark
+        const minutes = now.getMinutes();
+        if (minutes < 30) {
+            next.setMinutes(30, 0, 0);
+        } else {
+            next.setHours(now.getHours() + 1, 0, 0, 0);
+        }
+        return next;
+    }
+
+    let nextDraw = getNextDrawTime();
+
+    function updateCountdown() {
+        const now = new Date();
+        const diff = nextDraw - now;
+
+        if (diff <= 0) {
+            // Draw time reached → reset to next 30 mins
+            nextDraw = getNextDrawTime();
+        }
+
+        const minutes = Math.floor(diff / 1000 / 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        countdownEl.textContent = `Next Draw: ${minutes}m ${seconds}s`;
+    }
+
+    // Run immediately and every second
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+}
+
+// Call after DOM loaded
+document.addEventListener('DOMContentLoaded', () => {
+    startDrawCountdown();
+});
